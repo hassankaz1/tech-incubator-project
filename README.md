@@ -1,70 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tech Incubator Project
+Application meant to be used by a school tech incubator. Companies may sign up and create projects for users (students) to take on. Students may view these projects and submit before deadline. 
 
-## Available Scripts
+# Composition
+## Technologies used
+* FrontEnd
+    - React
+* Backend
+    - Firebase
+    - (DB) Firestore
 
-In the project directory, you can run:
+# How it Works
+Users are greeted with a login/signup page. If account exists, they may log in normally. If they are new to the application, the user has the option to sign up as a company or user (student) with a short form. 
 
-### `npm start`
+<p align="center">
+  <img src="https://github.com/hassankaz1/Plugged-In/blob/master/gifs/find-chargergiphy.gif" alt="animated" />
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## User (student) Interface
+Students are shown their dashboard with all the tasks they have signed up for. They can view how many total projects they are assigned, how many are completed and how many are left. All incomplete assignments are shown with color orange, and completed with green. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+There is also the option to have a further look at each individual project with the "view more" button. Here a pop up with all the description of the project is show as well as a submit link. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Students can also take on new projects via the "Find New Projects" button
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Company Interface
+Companies are shown their dashboard with all the projects they have created. They can view how many total projects they are assigned, how many are completed and how many are left. All incomplete assignments are shown with color orange, and completed with green. There is also the option to have a further look at each individual project with the "view more" button. Here a pop up with all the description of the project including any participants and submission links. Same as users.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Companies can also create new tasks via form. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Editing User
+Both companies and users can edit their profile via "edit profile" button. Here they can change their names as well as the profile picture.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Improvements 
+## Permission Issues
+- Creating tasks or viewing tasks should be exclusive to either company or student. This is not handled correctly. Needs to be fixed. 
+- Count of completed/ incomplete projects in Dashboard is not always refreshed. Needs to be updated and resolved as soon as there is a change. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
